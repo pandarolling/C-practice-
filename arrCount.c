@@ -10,7 +10,7 @@ int main(){
 		ndigits[i] = 0;
 
 	while((c = getchar()) != EOF){
-		if(c >='0' && c <='9'){
+		if(c >='0' && c <='9'	){
 			++ndigits[c-'0'];
 		}else if (c =='\n' || c== '\t' || c==' '){
 			++nwhite;
