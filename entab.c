@@ -1,11 +1,12 @@
-entab.c
+// entab.c
 
 #include<stdio.h>
 
 int main(){
 	int n =8 ;
-	int column	= 0;
+	int column= 0;
 	int c;
+	int noOfTab, noOfSpaces;
 	// printf("Enter the tabstop column : ");
 	// scanf("%d",&n);
 
@@ -15,7 +16,7 @@ int main(){
 			putchar(c);
 
 		}else
-		if(c == '\t'){
+		if(c == ' '){
 			for(int i = 1; i <= n-(column%n); i++){
 				printf(" ");
 			}
